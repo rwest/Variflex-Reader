@@ -1,0 +1,3 @@
+Reads in a VariFlex file into a dictionary of numpy arrays, for further processing
+
+VariFlex uses eigenvalue decomposition to calculate k(T,P).  The magnitude of the eigenvalue in the first array tells us whether it corresponds to chemical reaction or internal relaxation of energy.  The second array is k(T,P) for each of the wells, which each column corresponding to a well, and each row corresponding to an eigenvalue.  The third array is the k(T,P) for the product channels.  The beauty of this system is that, provided the eigenvalue is accurately determined, we have a closed-form solution for k(T,P).
